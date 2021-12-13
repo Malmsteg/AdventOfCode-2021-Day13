@@ -10,7 +10,7 @@ namespace AdventOfCode_2021_Day13
         public static void Main()
         {
             string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string file = Path.Combine(currentDirectory, @"..\..\..\input.txt");
+            string file = Path.Combine(currentDirectory, @"..\..\..\test.txt");
             string path = Path.GetFullPath(file);
             string[] text = File.ReadAllText(path).Replace("\r", "").Split("\n");
         }
